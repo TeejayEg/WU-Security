@@ -1,0 +1,192 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #020202;
+  color: #f4f814;
+  padding: 20px 0;
+}
+
+header .logo img {
+  height: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header .cta {
+  float: right;
+}
+
+/* Main Styles */
+main {
+  padding: 20px 0;
+}
+
+.image{
+  width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.image1{
+  width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.image2{
+  width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.floating-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 300px;
+}
+
+.floating-box h3 {
+  margin: 0;
+}
+
+.floating-box .btn {
+  display: block;
+  margin-top: 10px;
+  width: 85px;
+}
+
+.floating-box1 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  width: 1000px;
+  max-width: 1500px;
+}
+
+.floating-box p {
+  margin-top: 0;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #fedd00;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6c200;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #f1ee2f;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e6c200;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Guide and Review Process Styles */
+#guide,
+#review-process {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+#guide h2,
+#review-process h2 {
+  margin-bottom: 20px;
+}
