@@ -52,7 +52,7 @@ header .cta {
 }
 
 header .btn {
-  background-color: #f9e79f;
+  background-color: #fedd00;
   padding: 10px 20px;
   color: black;
   text-decoration: none;
@@ -61,7 +61,7 @@ header .btn {
 }
 
 header .btn:hover {
-  background-color: #f7d679;
+  background-color: #e6c200;
 }
 
 /* Image Styles */
