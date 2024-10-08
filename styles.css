@@ -51,31 +51,39 @@ main {
   padding: 20px 0;
 }
 
-.image{
-  width: 1200px;
+.image {
+  width: 100%;
+  max-width: 1200px;
   height: 500px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-.image1{
-  width: 1200px;
+.image1 {
+  width: 100%;
+  max-width: 1200px;
   height: 500px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-.image2{
-  width: 1200px;
+.image2 {
+  width: 100%;
+  max-width: 1200px;
   height: 500px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
+/* Floating Box Styles */
 .floating-box {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 40px 70px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .floating-box h3 {
@@ -94,8 +102,8 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  width: 1000px;
-  max-width: 1500px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .floating-box p {
@@ -106,6 +114,7 @@ main {
   padding: 40px 0;
 }
 
+/* Button Styles */
 .btn {
   display: inline-block;
   background-color: #fedd00;
@@ -120,12 +129,13 @@ main {
   background-color: #e6c200;
 }
 
+/* Form Styles */
 form {
   background-color: #f9f9f9;
   padding: 30px;
   border-radius: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  width: 60%;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -189,4 +199,37 @@ footer .container {
 #guide h2,
 #review-process h2 {
   margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header nav ul {
+    text-align: center;
+  }
+
+  .image, .image1, .image2 {
+    height: auto;
+  }
+
+  .floating-box, .floating-box1 {
+    width: 100%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo img {
+    height: 18px;
+  }
+
+  .floating-box {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
 }
