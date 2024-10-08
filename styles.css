@@ -1,24 +1,27 @@
-/* Global Styles */
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fff;
+  color: #333;
 }
 
 .container {
-  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Header Styles */
 header {
   background-color: #020202;
-  color: #f4f814;
+  color: #fff;
   padding: 20px 0;
 }
 
 header .logo img {
-  height: 40px; /* Larger size for desktop */
+  height: 30px; /* Larger size for desktop */
 }
 
 header nav ul {
@@ -49,37 +52,33 @@ header .cta {
 }
 
 header .btn {
-  background-color: #f9e79f; /* Light yellow */
+  background-color: #f9e79f;
   padding: 10px 20px;
-  color: #000; /* Changed text color to black for contrast */
+  color: black;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 header .btn:hover {
-  background-color: #f7d679; /* Slightly darker yellow on hover */
+  background-color: #f7d679;
 }
 
-/* Main Styles */
-main {
-  padding: 20px 0;
-}
-
+/* Image Styles */
 .image {
   width: 100%;
   max-width: 1200px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 10px;
+  height: 400px; /* Reduced height */
+  object-fit: cover; /* Ensures the image fits within the container without distortion */
+  border-radius: 15px;
 }
 
 .image1 {
   width: 100%;
   max-width: 1200px;
-  height: 500px;
+  height: 400px; /* Reduced height */
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .image2 {
@@ -91,49 +90,69 @@ main {
 }
 
 /* Floating Box Styles */
-.floating-box {
-  background-color: #f9f9f9;
+.floating-box,
+.floating-box1 {
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 40px 70px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  width: 90%;
-  max-width: 250px;
+}
+
+.floating-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 350px; /* Maximum width on desktop */
+  width: 90%; /* Adjust width to fit smaller screens */
+  text-align: center; /* Center the text content */
 }
 
 .floating-box h3 {
-  margin: 0;
-}
-
-.floating-box .btn {
-  display: block;
-  margin-top: 10px;
-  width: 85px;
-}
-
-.floating-box1 {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-  width: 100%;
-  max-width: 1000px;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .floating-box p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.floating-box a.btn {
+  display: inline-block;
+  background-color: #fedd00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.floating-box a.btn:hover {
+  background-color: #e6c200;
+}
+
+.floating-box1 {
+  width: 1000px; /* For desktop */
+  max-width: 100%;
+}
+
+.floating-box1 h2 {
   margin-top: 0;
 }
 
+/* Section Styling */
 .section {
   padding: 40px 0;
 }
 
-/* Button Styles */
 .btn {
   display: inline-block;
   background-color: #fedd00;
-  color: #000;
+  color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -144,14 +163,31 @@ main {
   background-color: #e6c200;
 }
 
+/* Footer Styles */
+footer {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  clear: both;
+}
+
+footer .left {
+  float: left;
+}
+
+footer .right {
+  float: right;
+}
+
 /* Form Styles */
 form {
   background-color: #f9f9f9;
   padding: 30px;
   border-radius: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -159,92 +195,118 @@ form {
   margin-bottom: 20px;
 }
 
-label {
+.form-group label {
   display: block;
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"],
-input[type="date"] {
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
-input[type="submit"] {
-  background-color: #f1ee2f;
-  color: #000;
+.form-group input[type="submit"] {
+  background-color: #2f73e0;
+  color: #fff;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  background-color: #e6c200;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Guide and Review Process Styles */
-#guide,
-#review-process {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-}
-
-#guide h2,
-#review-process h2 {
-  margin-bottom: 20px;
+.form-group input[type="submit"]:hover {
+  background-color: #1b57b8;
 }
 
 /* Responsive Styles */
+
+/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
-  header nav ul {
-    text-align: center;
-  }
-
-  .image, .image1, .image2 {
-    height: auto;
-  }
-
-  .floating-box, .floating-box1 {
-    width: 100%;
-  }
-
-  form {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
   header .logo img {
-    height: 18px;
+    height: 30px;
+  }
+
+  header .cta {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  header ul li {
+    display: block;
+    margin: 10px 0;
   }
 
   .floating-box {
+    max-width: 90%; /* Adjust to fit within mobile/tablet screens */
+    padding: 15px;
+  }
+
+  .floating-box h3 {
+    font-size: 1.3em;
+  }
+
+  .floating-box p {
+    font-size: 1em;
+  }
+
+  .floating-box1 {
     width: 100%;
   }
 
-  form {
+  footer .left,
+  footer .right {
+    float: none;
     width: 100%;
+    text-align: center;
   }
 }
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  header .logo img {
+    height: 25px;
+  }
+
+  header ul li {
+    margin: 5px 0;
+  }
+
+  .cta {
+    margin-top: 15px;
+  }
+
+  .image,
+  .image1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .image2{
+    width: 100%;
+    height: auto;
+  }
+
+  .floating-box,
+  .floating-box1 {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .floating-box h3 {
+    font-size: 1.2em;
+  }
+
+  .floating-box p {
+    font-size: 0.95em;
+  }
+
+  footer .left,
+  footer .right {
+    text-align: center;
+  }
