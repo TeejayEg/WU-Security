@@ -82,8 +82,8 @@ main {
   border-radius: 10px;
   box-shadow: 0 40px 70px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  width: 100%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 250px;
 }
 
 .floating-box h3 {
