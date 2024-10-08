@@ -49,17 +49,18 @@ header .cta {
 }
 
 header .btn {
-  background-color: #2f73e0;
+  background-color: #f9e79f; /* Light yellow */
   padding: 10px 20px;
-  color: white;
+  color: #000; /* Changed text color to black for contrast */
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 header .btn:hover {
-  background-color: #0056b3;
+  background-color: #f7d679; /* Slightly darker yellow on hover */
 }
+
 /* Main Styles */
 main {
   padding: 20px 0;
